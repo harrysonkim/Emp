@@ -31,4 +31,13 @@ public class EmpServiceImpl implements EmpService{
 		return result;
 	}
 
+	@Override
+	public Emp Info(int empno) {
+		
+		Connection conn = JDBCTemplate.getConnection();
+		
+		Emp result = empDao.selectByEmp(conn, empno);
+		return result;
+	}
+
 }

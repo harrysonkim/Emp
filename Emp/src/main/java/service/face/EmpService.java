@@ -13,4 +13,12 @@ public interface EmpService {
 	 */
 	List<Emp> list();
 
+	/**
+	 * 전달된 empno를 이용하여 사원 정보를 조회
+	 * 
+	 * @param empno
+	 * @return
+	 */
+	Emp Info(int empno);
+
 }

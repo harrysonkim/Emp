@@ -15,5 +15,13 @@ public interface EmpDao {
 	 */
 	List<Emp> selectAll(Connection conn);
 
+	/**
+	 * 전달된 empno를 이용하여 사원 정보를 조회
+	 * 
+	 * @param conn - DB연결 객체
+	 * @param empno - 조회할 사원 번호
+	 * @return 조회된 사원의 상세 정보, 없으면 null
+	 */
+	Emp selectByEmp(Connection conn, int empno);
 
 }
